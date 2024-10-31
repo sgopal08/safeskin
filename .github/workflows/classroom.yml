@@ -1,0 +1,16 @@
+name: Autograding Tests
+on:
+  - push
+  - workflow_dispatch
+  - repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  Lint:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: SwiftFormat
+        run: swiftformat --lint . --strict --reporter github-actions-log
