@@ -16,7 +16,7 @@ struct ScanProductView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Enter product name", text: $productName)
+                TextField("Enter Product Name", text: $productName)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(maxWidth: 300)

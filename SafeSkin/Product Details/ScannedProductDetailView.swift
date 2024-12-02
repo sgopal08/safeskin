@@ -27,7 +27,7 @@ struct ScannedProductDetailView: View {
                         .border(Color.gray, width: 1)
                         .cornerRadius(8)
                 } else {
-                    Text("No allergies specified.")
+                    Text(text)
                         .padding()
                         .border(Color.gray, width: 1)
                         .cornerRadius(8)

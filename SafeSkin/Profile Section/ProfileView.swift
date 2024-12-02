@@ -20,7 +20,6 @@ struct ProfileView: View {
                     Section(header: Text("My Info")) {
                         Text("Name: \(profileModel.name)")
                         Text("Skin Type: \(profileModel.skinType)")
-                        Text("Race/Ethnicity: \(profileModel.ethnicity)")
                         HStack {
                             Text("Skin Color: ")
                             Circle()
@@ -33,9 +32,7 @@ struct ProfileView: View {
                     }
 
                     Button(action: {
-                        // Set isEditing to true to show the "Personal Information" section
                         isEditing = true
-                        // Reset the submitted state to allow for re-editing
                         isSubmitted = false
                     }) {
                         Text("Edit Profile")
@@ -52,7 +49,7 @@ struct ProfileView: View {
                 
                 // Display the Personal Information section if not submitted or while editing
                 if !isSubmitted || isEditing {
-                    Section(header: Text("Personal Information")) {
+                    Section(header: Text("Skin Profile")) {
                         TextField("Name", text: $profileModel.name)
                         
                         Picker("Skin Type", selection: $profileModel.skinType) {

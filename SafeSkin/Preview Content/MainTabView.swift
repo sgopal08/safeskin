@@ -29,7 +29,7 @@ struct InstructionsPopupView: View {
                 """)
                 .font(.body)
                 .padding()
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
             
             Button(action: {
                 showInstructions = false
