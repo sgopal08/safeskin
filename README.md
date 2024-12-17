@@ -6,4 +6,4 @@ SafeSkin allows users to quickly identify ingredients in skincare, makeup, and o
 
 Built using Apple VisionKit's VNDocumentCameraViewController.
 
-![RPReplay_Final1733111053-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/5f47ed17-9067-421d-857b-35868ecefeff)
+![RPReplay_Final1733111053-ezgif com-resize](https://github.com/user-attachments/assets/9d2d6c7b-e0e4-483f-840b-348b5d002d3e)
